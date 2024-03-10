@@ -16,6 +16,10 @@ class ZsDic:
         )
 
     def get_dict(self, dict_type: str):
+        """
+        :param dict_type: type of dictionary to return. Can be 'zs', 'pack', 'bcett', or 'byml'
+        :return: bytes or binary data
+        """
 
         match dict_type:
 
