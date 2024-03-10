@@ -30,3 +30,7 @@ class ZsDic:
 
             case 'byml':
                 pass   # TODO: Stub
+
+        raise ValueError(
+            "dict_type param may either be 'zs', 'pack', 'bcett', or 'byml'. It can't be " + dict_type
+        )
