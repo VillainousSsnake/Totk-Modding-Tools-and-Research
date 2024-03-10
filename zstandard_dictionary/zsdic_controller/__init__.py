@@ -24,16 +24,16 @@ class ZsDic:
         match dict_type:
 
             case 'zs':
-                pass  # TODO: Stub
+                return self.zip_controller.read(name='zs.zsdic')
 
             case 'pack':
-                pass  # TODO: Stub
+                return self.zip_controller.read(name='pack.zsdic')
 
             case 'bcett':
-                pass  # TODO: Stub
+                return self.zip_controller.read(name='bcett.byml.zsdic')
 
             case 'byml':
-                pass   # TODO: Stub
+                return self.zip_controller.read(name='bcett.byml.zsdic')
 
         raise ValueError(
             "dict_type param may either be 'zs', 'pack', 'bcett', or 'byml'. It can't be " + dict_type
